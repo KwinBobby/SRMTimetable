@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.knby.srmtimetable.MainActivity"
+   >
+
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Day order 1"
+        android:id="@+id/dayOrder1Button"
+        android:tag="1"
+        android:onClick="display"
+        android:background="@drawable/shape"
+        android:padding="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayOrder2Button"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:text="Day order 2"
+        android:id="@+id/dayOrder2Button"
+        android:tag="2"
+        android:onClick="display"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/dayOrder3Button"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Day order 3"
+        android:id="@+id/dayOrder3Button"
+        android:background="@drawable/shape"
+        android:tag="3"
+        android:onClick="display"
+        android:padding="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Day order 4"
+        android:background="@drawable/shape"
+        android:id="@+id/dayOrder4Button"
+        android:onClick="display"
+        android:tag="4"
+        android:padding="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dayOrder3Button"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Day order 5"
+        android:background="@drawable/shape"
+        android:id="@+id/dayOrder5Button"
+        android:onClick="display"
+        android:tag="5"
+        android:padding="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dayOrder4Button"
+        app:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginStart="8dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+</android.support.constraint.ConstraintLayout>

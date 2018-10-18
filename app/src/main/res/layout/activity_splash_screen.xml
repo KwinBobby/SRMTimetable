@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+           android:layout_centerHorizontal="true"
+            android:src="@drawable/logov2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SRM Timetable"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:id="@+id/SRMtimetable"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="The timetable app"
+        android:textSize="20sp"
+        android:textColor="@color/textColor"
+        android:id="@+id/description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/SRMtimetable"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="knby"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/knby"
+        android:textColor="@color/textColor"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/description"
+/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

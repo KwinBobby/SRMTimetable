@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.knby.srmtimetable.DetailsActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Teacher: "
+        android:id="@+id/teacher"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Course: "
+        android:id="@+id/subject"
+
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/teacher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Slot: "
+        android:id="@+id/slot"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/subjectName"
+        app:layout_constraintLeft_toLeftOf="@+id/subject" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Room: "
+        android:id="@+id/room"
+
+        app:layout_constraintLeft_toLeftOf="@+id/slot"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/slotName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Time: "
+        android:id="@+id/time"
+
+        app:layout_constraintLeft_toLeftOf="@+id/room"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/roomName" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/subjectName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/subject"
+        android:layout_width="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/subject"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/slotName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/slot"
+        app:layout_constraintBaseline_toBaselineOf="@+id/slot"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/teacherName"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/teacher"
+        android:layout_marginStart="8dp"
+        android:layout_width="0dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teacher"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/roomName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/room"
+        app:layout_constraintBaseline_toBaselineOf="@+id/room"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/timeName"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toRightOf="@+id/time"
+        app:layout_constraintBaseline_toBaselineOf="@+id/time"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
